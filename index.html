@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            body {
+              padding: 0;
+              margin: 0;
+              background: #fff;
+            }
+            /* Styles for demo purposes only */
+            .demo__container {
+              padding: 16px 30px;
+              font-family: 'Roboto';
+            }
+
+            .bg-dark {
+              background: #333;
+              padding: 24px;
+            }
+            
+        </style>
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Web component polyfill loader -->
+        <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+        <!-- MyUW web components -->
+        <script src="https://unpkg.com/@myuw-web-components/myuw-app-styles@^1"></script>
+
+        <script type="module" src="https://unpkg.com/@myuw-web-components/myuw-app-bar@^1?module"></script>
+        <script nomodule src="https://unpkg.com/@myuw-web-components/myuw-app-bar@^1"></script>
+
+        <!-- Badge component -->
+        <script type="module" src="./dist/myuw-badge.mjs"></script>
+        <script nomodule src="./dist/myuw-badge.js"></script>
+    </head>
+
+    <body>
+        <myuw-app-bar
+            theme-name="MyUW"
+            app-name="Badge Demo">
+        </myuw-app-bar>
+        <div class="demo__container">
+          <p>Default theme:</p>
+          <p>
+            <myuw-badge 
+              url="https://my.wisc.edu/web/apps/details/my-professional-development">
+            </myuw-badge>
+          </p>
+  
+          <p>Black theme:</p>
+          <p>
+            <myuw-badge 
+              dark-theme
+              url="http://my.wisc.edu/web/apps/details/earnings-statement">
+            </myuw-badge>
+          </p>
+
+          <p>Default theme w/ "white-border" attribute:</p>
+          <p class="bg-dark">
+            <myuw-badge 
+              white-border
+              url="http://my.wisc.edu/web/apps/details/earnings-statement">
+            </myuw-badge>
+          </p>
+
+          <p>Black theme w/ "white-border" attribute:</p>
+          <p class="bg-dark">
+            <myuw-badge 
+              white-border
+              dark-theme
+              url="http://my.wisc.edu/web/apps/details/earnings-statement">
+            </myuw-badge>
+          </p>
+
+          <p>Broken URL (should not appear, should warn in console):</p>
+          <p>
+            <myuw-badge
+              url="fjkdls;aj949?">
+            </myuw-badge>
+          </p>
+        </div>
+    </body>
+</html>
