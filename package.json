@@ -1,6 +1,6 @@
 {
   "name": "@myuw-web-components/myuw-badge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "module": "dist/myuw-badge.min.mjs",
   "browser": "dist/myuw-badge.min.js",
