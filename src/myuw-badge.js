@@ -79,11 +79,15 @@ class MyUWBadge extends HTMLElement {
     // Set border
     if (this.hasAttribute('white-border')) {
       this.$badge.style.border = '1px solid white';
+    } else {
+      this.$badge.style.border = 'none';
     }
 
     // Set black theme
     if (this.hasAttribute('dark-theme')) {
       this.$badge.className = 'theme-dark';
+    } else {
+      this.$badge.className = '';
     }
 
     // Set url
@@ -91,6 +95,7 @@ class MyUWBadge extends HTMLElement {
       this.$badge.setAttribute('href', this['url']);
       this.$badge.style.opacity = '1';
     } else {
+      this.$badge.setAttribute('href', this['url']);
       console.warn(`myuw-badge: The url attribute did not match a generic url regex check (url: ${this['url']})`);
     }
   }
