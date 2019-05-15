@@ -1,5 +1,7 @@
 # myuw-badge
 
+![alt text](badges.png "Badge themes")
+
 A badge with two available themes to help users discover new widgets and content in MyUW.
 
 ## Getting Started
