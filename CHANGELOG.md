@@ -1,9 +1,10 @@
 # myuw-badge versions
 
-## 1.0.2
+## (Next version)
 
-### Fixed
 - Added line-height so badge is reliably unaffected by CSS of containing elementss
+- Guided in README to use the red theme only in a UW-Madison context whereas the
+  dark theme is appropriate in all MyUW contexts.
 
 ## 1.0.1
 

@@ -33,7 +33,7 @@ Use the component's HTML tag wherever you want:
 ### Configurable properties via attributes
 
 - **url:** (Required) Set the URL the badge should link to (e.g. The detail page for a MyUW widget)
-- **dark-theme:** If this attribute is present, the badge will use the black theme (red by default)
+- **dark-theme:** If this attribute is present, the badge will use the black theme (red by default). The red theme is specific to UW-Madison; the black theme is appropriate for both UW-Madison and other MyUW contexts (e.g. my.wisconsin or my.uwrf)
 - **white-border:** If this attribute is present, the badge will have a white border (e.g. when using the badge on a dark background)
 
 ## Development and contribution
