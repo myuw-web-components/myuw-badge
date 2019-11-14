@@ -6,29 +6,24 @@ A badge with two available themes to help users discover new widgets and content
 
 ## Getting Started
 
-Add the following import to your page's `<head>`:
+Include the component in your page:
 
 ```html
-<script type="module" src="https://unpkg.com/@myuw-web-components/myuw-badge@^1?module"></script>
-<script nomodule scr="https://unpkg.com/@myuw-web-components/myuw-badge@^1"></script>
-```
+<!-- import the module -->
+<script type="module" src="https://cdn.my.wisc.edu/@myuw-web-components/myuw-badge@latest/myuw-badge.min.mjs"></script>
 
-**Important**: For responsiveness to many screen sizes, ensure you have included the viewport meta tag in your application:
+<!-- fallback for browsers without ES2015 module support -->
+<script nomodule scr="https://cdn.my.wisc.edu/@myuw-web-components/myuw-badge@latest/myuw-badge.min.js"></script>
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
-
-Use the component's HTML tag wherever you want:
-
-```HTML
 <myuw-badge
-    url=""
-    dark-theme
-    white-border
+  url=""
+  dark-theme
+  white-border
 >
 </myuw-badge>
 ```
+
+_Note:_ The evergreen "latest" version can be used for convenience, but in production settings it is recommended to use the latest [release version](https://github.com/myuw-web-components/myuw-badge/releases) specifically, and upgrade only after testing!
 
 ### Configurable properties via attributes
 
