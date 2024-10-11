@@ -1,5 +1,7 @@
 # myuw-badge
 
+**`myuw-badge` is not currently maintained.**
+
 ![Screenshot showing 'Find it in MyUW' badge in each of the themes. A Madison-red theme including the Madison crest. A black theme with only the bare 'Find it in MyUW' text](badges.png "Badge themes")
 
 A badge with two available themes to help users discover new widgets and content in MyUW.
